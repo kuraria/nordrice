@@ -1,0 +1,67 @@
+[global]
+  # Monitor
+  monitor = 0
+  follow = keyboard
+  # Geometry
+  width = 300
+  height = 300
+  scale = 0
+  offset = 25x40
+  scale = 0
+  # Position
+  origin = bottom-right
+  # Notification limit number
+  notification-limit = 10
+  progress_bar = false
+  indicate_hidden = yes
+  # Decoration
+  transparency = 0
+  separator_height = 2
+  padding = 10
+  frame_width = 0
+  gap_size = 4
+  sort = yes
+  font = CascaydiaCoveNerdFont 8
+  markup = full
+  format = "<b>%s</b>\n%b"
+  alignment = center
+  vertical_alignment = center
+  show_age_threshold = 50
+  ellipsize = middle
+  ignore_newline = notification
+  stack_duplicates = true
+  hide_duplicates_count = false
+  show_indicators = yes
+  ## For icons
+  icon_theme = ePapirus
+  icon_position = left
+  min_icon_size = 32
+  max_icon_size = 128
+  # Advanced
+  sticky_history = yes
+  history_length = 20
+  always_run_script = true
+  title = Dunst
+  class = Dunst
+  corner_radius = 8
+  ignore_dbusclose = false
+
+  # Colors
+  [urgency_low]
+    background = "#575757"
+    foreground = "#e0dcdc"
+    timeout = 10
+    
+[urgency_normal]
+    background = "#3b4252"
+    foreground = "#ffffff"
+    timeout = 10
+    
+[urgency_critical]
+    background = "#f06e6e"
+    foreground = "#ffffff"
+    timeout = 0
+
+
+
+

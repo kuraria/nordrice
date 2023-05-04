@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# Set decoration geometry
+berryc border_width       0
+berryc inner_border_width 3
+berryc title_height       30
+berryc top_gap            35
+
+# Set decoration colors
+berryc focus_color         3B4252
+berryc unfocus_color       4C566A
+berryc inner_focus_color   3B4252
+berryc inner_unfocus_color 4C566A
+berryc text_focus_color    ffffff
+berryc text_unfocus_color  eeeeee
+
+# Other options
+berryc smart_place "true"
+berryc draw_text   "true"
+berryc edge_lock   "true"
+berryc set_font    "CaskaydiaCoveNerdFont-9"
+
+# Startup
+sxhkd -c $HOME/.config/berry/sxhkdrc &
+nitrogen --restore &
+picom &
+$HOME/.config/polybar/launch.sh
