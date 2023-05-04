@@ -1,2 +1,2 @@
 # nordrice
-A very minimal rice using nord theme
+A very minimal rice using nord theme.
